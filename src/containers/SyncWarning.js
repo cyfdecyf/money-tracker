@@ -18,9 +18,9 @@ class SyncWarning extends React.Component {
           storage is cleared.
         </Message.Content>
         <Message.Content>
-          <Link to="/auth">Sign in</Link> if you want to sync your data with the
-          cloud or setup <Link to="/couchdb">Private CouchDB</Link>.
-          Aftet that, you will be able to access you data from multiple devices.
+          Setup <Link to="/couchdb">Private CouchDB</Link> to sync your data to
+          CouchDB server.
+          After that, you will be able to access you data from multiple devices.
         </Message.Content>
       </Message>
     );

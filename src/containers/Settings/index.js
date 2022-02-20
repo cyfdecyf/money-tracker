@@ -3,7 +3,6 @@ import CurrencyInput from './Currency/Input';
 import CurrenchExchangeRate from './Currency/ExchangeRate';
 import DataExport from './DataExport';
 import DataImport from './DataImport';
-import User from './User';
 import CollapsibleSection from '../../components/CollapsibleSection';
 
 const Settings = () => (
@@ -18,9 +17,6 @@ const Settings = () => (
     <CollapsibleSection name="settings_export" label="Data Export">
       <DataExport />
       </CollapsibleSection>
-    <CollapsibleSection name="settings_user" label="User">
-      <User />
-    </CollapsibleSection>
   </div>
 );
 
