@@ -13,7 +13,6 @@ function CouchDbProvision(user, context, callback) {
     .then(provisionUser)
     .then(() => Promise.all(databases.map(provisionDatabase)))
     .then(() => Promise.all(databases.map(provisionSecurity)))
-    .then(() => auth0.users.updateAppMetadata(user.user_id, user.app_metadata))
     .then(() => callback(null, user, context))
     .catch(err => callback(err));
 
